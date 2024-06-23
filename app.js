@@ -61,9 +61,9 @@ function reiniciarJuego() {
 
 //Funcion para establecer las condiciones iniciales
 function condicionesIniciales() {
+    numeroMaximo = 10;
+    intentos = 1;
     asignarTextoElemento('titulo', 'Número Secreto');
     asignarTextoElemento('parrafo', `Selecciona un numero del 1 al ${numeroMaximo}`);
-    intentos = 1;
-    numeroMaximo = 10;
     numeroSecreto = generarNumeroSecreto();
 }
